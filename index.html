@@ -1,10 +1,46 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+    <header class="px-6 py-2.5 bg-Brown text-white text-xl xl:px-10">
+      <div class=" flex justify-between mx-auto max-w-screen-2xl">
+      <!-- 漢堡選單 -->
+        <button class=" lg:hidden">
+          <!-- 比例要調整 -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-10 dark:text-gray-100">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+        <!-- logo -->
+        <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class=" hidden lg:flex items-center ">
+          <img src="./assets/images/hex_logo.png" alt="hex_logo">
+        </a>
+        <!-- 立刻報名 -->
+        <div class="items-center flex ">
+          <ul class="hidden space-x-9 lg:flex mr-4">
+            <li class="hidden lg:flex ">
+              <a  href="#" class="flex items-center   ">關卡任務</a>
+            </li>
+            <li class="hidden lg:flex">
+              <a  href="#" class="flex items-center   ">競賽說明</a>
+            </li>
+          </ul>
+          <button class="self-center px-6 lg:px-14 py-1.5 font-medium rounded-full bg-Red ">立即報名</button>
+        </div>
+
+        
+      </div>
+    </header>
+    <!-- 這是從css處抓的相對路徑不同, 且不要將content放這 -->
+    <div class=" bg-cover bg-repeat  bg-[url('../images/bg_desktop.png')]">
+    
 <main class="pt-3.5 text-Brown">
   <section class="  bg-cover  bg-no-repeat   bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] lg:aspect-auto  lg:bg-[url('../images/NewsPaper.png')] lg:pt-7 lg:pb-8 lg:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
     <div class="pt-10 pb-20 px-5 overflow-hidden  bg-cover  bg-no-repeat max-w-screen-2xl mx-auto lg:pt-24 lg:pb-0 lg:px-10 lg:bg-[url('../images/banner_bg_tablet.png')] lg:relative lg:overflow-visible xl:bg-[url('../images/banner_bg_desktop.png')] xl:aspect-[100/49] xl:pt-[51px] xl:px-[59px] xl:pb-[85px]">
@@ -228,3 +264,27 @@ current: index
     </div>
   </section> 
 </main>
+    
+      <footer class="footer ">
+        <div class="bg-Brown">
+          <div class=" mx-auto max-w-screen-2xl  flex flex-col justify-center px-14 pt-16 pb-16    text-white">
+            <p class="text-3xl lg:text-6xl text-center pb-16">贊助單位</p>
+            <ul class="  flex flex-col lg:flex-row space-y-12 lg:space-y-0 lg:justify-between lg:items-center ">
+              <li><a href="" class="flex justify-center items-center"><img class="w-100 h-auto" src="./assets/images/BlockStudio.png" alt="BlockStudio"></a></li>
+              <li><a href="" class="flex justify-center items-center"><img class="w-100 h-auto" src="./assets/images/KDAN.png" alt="KDAN"></a></li>
+              <li><a href="" class="flex justify-center items-center"><img class="w-100 h-auto" src="./assets/images/TITANSOFT.png" alt="TITANSOFT"></a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center py-2.5 text-Brown">
+    
+          六角日報 © Code: Alex  /  Design: KT
+        </p>
+      </footer>
+    </div>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
