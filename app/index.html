@@ -1,0 +1,230 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="pt-3.5 text-Brown">
+  <section class="  bg-cover  bg-no-repeat   bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] lg:aspect-auto  lg:bg-[url('../images/NewsPaper.png')] lg:pt-7 lg:pb-8 lg:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
+    <div class="pt-10 pb-20 px-5 overflow-hidden  bg-cover  bg-no-repeat max-w-screen-2xl mx-auto lg:pt-24 lg:pb-0 lg:px-10 lg:bg-[url('../images/banner_bg_tablet.png')] lg:relative lg:overflow-visible xl:bg-[url('../images/banner_bg_desktop.png')] xl:aspect-[100/49] xl:pt-[51px] xl:px-[59px] xl:pb-[85px]">
+        <h1 class="text-6xl text-[80px] leading-tight font-medium text-center lg:text-left ">THE F2E <span class="bg-Red rounded-full align-middle text-white text-2xl font-bold px-5 drop-shadow-lg lg:rounded-lg lg:text-3xl lg:px-7">4th</span></h1> 
+        <div class="xl:flex xl:justify-between">
+          <p class="hidden text-4xl lg:block lg:text-5xl py-3 leading-normal font-bold text-center lg:text-left xl:w-1/3 xl:text-[42px] xl:leading-normal">前端工程師和介面設計師, 攜手合作拿獎金</p>
+          <ul class="hidden xl:block list-none leading-[11/10] w-1/3 space-y-2">
+            <li class="text-3xl">報名總人數 <span class="text-5xl">1158</span>人</li>
+            <li class="text-3xl">報名總人數 <span class="text-5xl">1052</span>人</li>
+            <li class="text-3xl">報名總人數 <span class="text-5xl">41</span>人</li>
+          </ul>
+        </div>
+        <div class="relative my-20 lg:static lg:mb-0 xl:static">
+          <!-- banner_avatar -->
+          <!-- 注意 absolute的w-full 不是相對 外層relative的100% 是相對螢幕(所以右邊會被擠出空間)，所以要用left-0 right-0才能確保100% -->
+          <div class="lg:overflow-hidden xl:absolute xl:flex xl:justify-center xl:left-0 xl:right-0  xl:bottom-0 " >
+            <!-- 小滑鼠 -->
+            <div class="absolute bottom-[60px] right-[60px]  ">
+              <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
+                <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-black rounded-xl">
+                </div>
+              </div>
+              <p class="text-center mt-1">向下滾動</p>
+            </div>
+            <img src="./assets/images/banner_avatar.png" class="w-full h-auto scale-125 lg:scale-100 lg:translate-y-5  xl:w-1/2" alt="">
+          </div>
+            <!-- mission stamp -->
+              <img src="./assets/images/misson.png" alt="" class="absolute w-2/3 h-auto -top-12 right-0 lg:w-5/12 lg:-top-6 xl:w-3/12">
+            <div class="absolute bottom-0  flex justify-center left-0 right-0 text-white font-medium lg:px-4 lg:bottom-8 xl:w-1/2 xl:left-1/2 xl:-translate-x-1/2"> 
+              <div class="flex  justify-between lg:w-9/12">
+                <p class="text-xl whitespace-nowrap lg:text-5xl xl:text-[43px]">個人獎<span class="text-4xl lg:text-7xl text-Red xl:text-[70px]">$3,000</span></p>
+                <p class="text-xl whitespace-nowrap lg:text-5xl xl:text-[43px]">團體獎<span class="text-4xl lg:text-7xl text-Red xl:text-[70px]">$10,000</span></p>
+              </div>
+            </div>
+        </div>
+        <div class="px-8 lg:px-0">
+          <p class="text-4xl  py-3 leading-normal font-bold text-center lg:hidden">前端工程師和介面設計師, 攜手合作拿獎金</p>
+          <p class="text-xl font-sans lg:hidden xl:block xl:w-1/4 xl:text-2xl">羨慕別人的酷酷網頁動畫？滿足不了同事的許願？動畫技能樹太雜無從下手？</p>
+        </div>
+      </div>
+  </section>
+  <!-- hexschool -->
+  <section class="mb-[85px] px-4 lg:pt-[62px] lg:mb-[103px] xl:mb-[175px]">
+    <div class="max-w-screen-2xl mx-auto grid grid-cols-1  lg:grid-cols-2 xl:grid-cols-1 gap-9 lg:space-0 xl:px-10">
+
+      <div class="pt-[54px] mb-11 lg:mb-0 lg:flex lg:flex-col lg:justify-center xl:mb-[99px]">
+        <div class="flex justify-center mb-6">
+          <img class="object-cover " src="./assets/images/HexSchool_title.png" alt="">
+        </div>
+        <p class=" font-sans font-medium text-4xl text-justify text-last-justify xl:text-center xl:tracking-[1em] xl:pb-10" >年度最強合作<span class="hidden xl:inline">，三大關卡來襲</span></p>
+        <p class="font-sans font-medium text-4xl text-justify pb-[22px]  text-last-justify xl:hidden" >三大關卡來襲</p> 
+        <div class="border-Brown border-t-4 border-b-4 py-1 lg:hidden xl:block"></div>
+      </div>
+      <!-- 活動卡片 -->
+      <div class=" flex flex-col bg-cover bg-no-repeat   bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[50px]">
+        <div class=" xl:flex xl:justify-between xl:px-9">
+          <p class="hidden xl:block text-[44px] text-white font-bold">視差滾動  Parallax Scrolling</p>
+          <img  class="block object-cover w-full mb-9 xl:w-auto" src="./assets/images/BlockStudio.png" alt="BlockStudio">
+        </div>
+        <div class="flex flex-col grow xl:flex-row xl:px-[104px] xl:pt-[55px]  ">
+          <div class="hidden xl:flex xl:justify-center xl:items-center xl:pr-[86px] xl:w-[40%]">
+            <div class="relative">
+                <img class="  absolute right-[37px] bottom-[40px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <img class=" h-1/2 " src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <img class=" absolute right-[97px] top-[27px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <div class="absolute bottom-[15px] right-[136px]  ">
+                  <div class="h-[44px] w-[30px] rounded-xl border-white border-2 mx-auto relative">
+                    <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-white rounded-xl">
+                    </div>
+                  </div>
+                  <p class="text-center mt-1 text-white">向下滾動</p>
+                </div>
+            </div>
+          </div>
+          <div class=" flex flex-col grow px-10 pt-[34px] xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
+            <h3 class="text-[44px] leading-normal font-bold mb-3">The F2E 活動網站設計</h3>
+            <p class="font-sans text-2xl leading-normal font-medium grow">請參考本屆官網的首頁視差滾動技巧，並請您重新 redesign 本頁面來設計。</p>
+            <div class="flex justify-between mt-auto  xl:justify-start">
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full border-solid border-Brown border-[3px] drop-shadow-lg xl:w-[30%]">關卡攻略</button>
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full bg-Red drop-shadow-lg text-white xl:w-[30%] xl:ml-5" >投稿</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div class=" flex flex-col bg-cover bg-no-repeat   bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[50px]">
+        <div class=" flex xl:justify-between xl:px-9">
+          <p class="hidden xl:block text-[44px] text-white font-bold">線上簽署  Canvas</p>
+          <img  class="ml-auto block object-cover w-1/2 mb-9 xl:w-auto xl:ml-0" src="./assets/images/KDAN.png" alt="KDAN">
+        </div>
+        <div class="flex flex-col grow xl:flex-row xl:px-[104px] xl:pt-[55px]  ">
+          <div class="hidden xl:flex xl:justify-center xl:items-center xl:pr-[86px] xl:w-[40%]">
+            <div class="relative">
+                <img class="  absolute right-[37px] bottom-[40px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <img class=" h-1/2 " src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <img class=" absolute right-[97px] top-[27px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+                <div class="absolute bottom-[15px] right-[136px]  ">
+                  <div class="h-[44px] w-[30px] rounded-xl border-white border-2 mx-auto relative">
+                    <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-white rounded-xl">
+                    </div>
+                  </div>
+                  <p class="text-center mt-1 text-white">向下滾動</p>
+                </div>
+                <div class="absolute left-[-20px] bottom-[-35px]">
+                  <img src="./assets/images/PDF.png" class="w-full h-auto" alt="PDF">
+                </div>
+            </div>
+          </div>
+          <div class=" flex flex-col grow px-10 pt-[34px] xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
+            <h3 class="text-[44px] leading-normal font-bold mb-3">今晚，我想來點點簽</h3>
+            <p class="font-sans text-2xl leading-normal font-medium grow">每次要 PDF 簽名都要列印出來再掃描好麻煩，自幹一個 Web 版本的簽名服務吧！</p>
+            <div class="flex justify-between mt-auto  xl:justify-start">
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full border-solid border-Brown border-[3px] drop-shadow-lg xl:w-[30%]">關卡攻略</button>
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full bg-Red drop-shadow-lg text-white xl:w-[30%] xl:ml-5" >投稿</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+            <div class=" flex flex-col bg-cover bg-no-repeat   bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[50px]">
+        <div class=" xl:flex xl:justify-between xl:px-9">
+          <p class="hidden xl:block text-[44px] text-white font-bold">Scrum  JS draggable</p>
+          <img  class="block object-cover w-full mb-9 xl:w-auto" src="./assets/images/TITANSOFT.png" alt="TITANSOFT">
+        </div>
+        <div class="flex flex-col grow xl:flex-row xl:px-[104px] xl:pt-[55px]  ">
+          <div class="hidden xl:flex xl:justify-center xl:items-center xl:pr-[86px] xl:w-[40%]">
+            <div class="relative">
+              <img class="  absolute right-[37px] bottom-[40px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+              <img class=" h-1/2 " src="./assets/images/transparentPlate.png" alt="transparentPlate">
+              <img class=" absolute right-[97px] top-[27px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
+              <img class="  absolute left-[-50px] top-[5px] " src="./assets/images/Scrum.png" alt="Scrum">
+                <div class="absolute bottom-[15px] right-[136px]  ">
+                  <div class="h-[44px] w-[30px] rounded-xl border-white border-2 mx-auto relative">
+                    <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-white rounded-xl">
+                    </div>
+                  </div>
+                  <p class="text-center mt-1 text-white">向下滾動</p>
+                </div>
+            </div>
+          </div>
+          <div class=" flex flex-col grow px-10 pt-[34px] xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
+            <h3 class="text-[44px] leading-normal font-bold mb-3">Scrum 新手村</h3>
+            <p class="font-sans text-2xl leading-normal font-medium grow">設計關卡內容與網頁互動效果，透過頁面關卡來呈現知識點，讓挑戰者藉由你設計的內容更了解 Scrum。</p>
+            <div class="flex justify-between mt-auto  xl:justify-start">
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full border-solid border-Brown border-[3px] drop-shadow-lg xl:w-[30%]">關卡攻略</button>
+              <button class="text-lg py-[13px] w-[49%]  text-center rounded-full bg-Red drop-shadow-lg text-white xl:w-[30%] xl:ml-5" >投稿</button>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+
+  </section>
+  <!-- 賽程 -->
+  <section >
+    <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">賽程時間</h2>
+    <div class="px-4 py-14 ">
+      <div class="flex overflow-x-scroll xl:flex-col xl:items-center">
+        <ul class="progress list-none flex font-sans space-x-12 ">
+          <li class="flex flex-col text-center  ">
+            <h3 class="text-3xl mb-9">開始報名</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-9 bg-Red rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li>10/13(四) 早上 11:00</li>
+              <li >至 11/6(日) 晚上 23:59</li>
+            </ul>
+          </li>
+          <li class="flex flex-col text-center relative  before:absolute  before:bg-Brown before:h-1 before:top-0 before:bottom-0 before:w-[250px] before:left-[-145px] before:m-auto before:-translate-y-[17px]">
+            <h3 class="text-3xl mb-9">開賽</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-9 bg-Brown rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li >UI組、團體組開賽 10/31</li>
+              <li>前端組開賽 11 /7</li>
+            </ul>
+          </li>
+          <li class="flex flex-col text-center relative  before:absolute  before:bg-Brown before:h-1 before:top-0 before:bottom-0 before:w-[250px] before:left-[-145px] before:m-auto before:-translate-y-[17px]">
+            <h3 class="text-3xl mb-9">登陸作品</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-9 bg-Brown rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li >10/31(一) 中午 12:00</li>
+              <li>至11/28(一) 中午 12:00</li>
+            </ul>
+          </li>
+          <li class="flex flex-col text-center relative  before:absolute  before:bg-Brown before:h-1 before:top-0 before:bottom-0 before:w-[250px] before:left-[-145px] before:m-auto before:-translate-y-[17px]">
+            <h3 class="text-3xl mb-9">線上直播</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-11 bg-Brown rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li >11/3 至 11/24(每週四)</li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="progress list-none flex font-sans space-x-12 mx-5 xl:mt-[92px]">
+          <li class="flex flex-col text-center  ">
+            <h3 class="text-3xl mb-9">初選</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-11 bg-Brown rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li class="px-10 mr-10 ">12/05(五)</li>
+            </ul>
+          </li>
+          <li class="flex flex-col text-center relative  before:absolute  before:bg-Brown before:h-1 before:top-0 before:bottom-0 before:w-[250px] before:left-[-145px] before:m-auto before:-translate-y-[17px] xl:before:-translate-y-[4px] ">
+            <h3 class="text-3xl mb-9">決選</h3>
+            <div class="w-[48.5px] h-[48.5px] mx-auto mb-11 bg-Brown rotate-45 relative z-10"></div>
+            <ul class="list-none text-2xl leading-normal text-left whitespace-nowrap">
+              <li class="px-10 ml-10 ">12/05(五)</li>
+            </ul>
+          </li>
+  
+        </ul>
+      </div>
+      <p class="hidden font-sans text-[28px] leading-normal mt-[66px] lg:block">初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
+    </div>
+  </section> 
+  <section>
+    <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">獎項 </h2>
+    <div class="py-14">
+       
+    </div>
+  </section> 
+  <section>
+    <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">各界大神直播分享</h2>
+    <div class="py-14">
+            
+    </div>
+  </section> 
+</main>
