@@ -7,8 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link rel="stylesheet" href="./assets/style/all.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 </head>
+
+<body >
+  <div class="overflow-hidden relative">
+      <!-- news paper -->
+  <section>
+    <img class="news_paper_1 absolute z-10 right-[-7%] top-[6%] scale-150" src="./assets/images/news_paper_1.png" alt="news_paper_1">
+    <img class="news_paper_2 absolute z-10 left-[20%]  scale-[1.7]" src="./assets/images/news_paper_2.png" alt="news_paper_2">
+    <img class="news_paper_3 absolute z-10 left-[-6%] top-[5%] scale-150" src="./assets/images/news_paper_3.png" alt="news_paper_3">
+                <!-- 小滑鼠 -->
+    <div class="absolute top-[4%] right-[50%] z-40 ">
+      <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
+        <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-black rounded-xl">
+        </div>
+      </div>
+      <p class="text-center mt-1">向下滾動</p>
+    </div>
+  </section>
     <header class="px-6 py-2.5 bg-Brown text-white text-xl xl:px-10">
       <div class=" flex justify-between mx-auto max-w-screen-2xl">
       <!-- 漢堡選單 -->
@@ -34,8 +52,6 @@
           </ul>
           <button class="self-center px-6 md:px-14 py-1.5 font-medium rounded-full bg-Red ">立即報名</button>
         </div>
-
-        
       </div>
     </header>
     <!-- 這是從css處抓的相對路徑不同, 且不要將content放這 -->
@@ -55,10 +71,11 @@
         </div>
         <p class="text-center py-2.5 text-Brown">
     
-          六角日報 © Code: Alex  /  Design: KT
+          六角日報 © Code: Bruno  /  Design: KT
         </p>
       </footer>
     </div>
+  </div>
   <script src="./assets/js/vendors.js"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
