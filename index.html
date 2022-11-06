@@ -12,19 +12,19 @@
 </head>
 
 <body >
-  <div class="overflow-hidden relative">
+  <div class="overflow-hidden relative entry-section">
       <!-- news paper -->
   <section>
     <img class="news_paper_1 absolute z-10 right-[-7%] top-[6%] scale-150" src="./assets/images/news_paper_1.png" alt="news_paper_1">
     <img class="news_paper_2 absolute z-10 left-[20%]  scale-[1.7]" src="./assets/images/news_paper_2.png" alt="news_paper_2">
     <img class="news_paper_3 absolute z-10 left-[-6%] top-[5%] scale-150" src="./assets/images/news_paper_3.png" alt="news_paper_3">
                 <!-- 小滑鼠 -->
-    <div class="absolute top-[4%] right-[50%] z-40 ">
+    <div class="mouse absolute top-[4%] right-[50%] z-40 ">
       <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
-        <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-black rounded-xl">
+        <div class="mouse_scroll absolute h-[14px] w-[3px] left-[11px] top-[-10px] bg-black rounded-xl">
         </div>
       </div>
-      <p class="text-center mt-1">向下滾動</p>
+      <p class="mouse_scroll text-center mt-1">向下滾動</p>
     </div>
   </section>
     <header class="px-6 py-2.5 bg-Brown text-white text-xl xl:px-10">
@@ -59,7 +59,7 @@
     
 <main class="pt-3.5 text-Brown ">
   <!-- banner -->
-  <section class="bg-contain sm:bg-cover bg-no-repeat bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] md:aspect-auto  md:bg-[url('../images/NewsPaper.png')] md:pt-7 md:pb-8 md:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
+  <section class="panel bg-contain sm:bg-cover bg-no-repeat bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] md:aspect-auto  md:bg-[url('../images/NewsPaper.png')] md:pt-7 md:pb-8 md:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
     <div class="pt-10 pb-20 px-2 sm:px-5 overflow-hidden bg-cover bg-no-repeat max-w-screen-2xl mx-auto md:pt-24 md:pb-0 md:px-10 md:bg-[url('../images/banner_bg_tablet.png')] md:relative md:overflow-visible xl:bg-[url('../images/banner_bg_desktop.png')] xl:aspect-[100/49] xl:pt-[51px] xl:px-[60px] xl:pb-[85px]">
         <h1 class="text-5xl whitespace-nowrap sm:text-6xl text-[80px] leading-tight font-extrabold text-center md:text-left ">THE F2E <span class="bg-Red rounded-full align-middle text-white text-2xl font-bold px-5 py-1 drop-shadow-md md:rounded-md md:text-3xl md:px-7">4th</span></h1> 
         <div class="xl:flex xl:justify-between">
@@ -71,23 +71,23 @@
           </ul>
         </div>
         <div class="relative my-8 sm:my-20 md:static md:mb-0 xl:static">
-          <!-- banner_avatar -->
           <!-- 注意 absolute的w-full 不是相對 外層relative的100% 是相對螢幕(所以右邊會被擠出空間)，所以要用left-0 right-0才能確保100% -->
           <div class="md:overflow-hidden xl:absolute xl:flex xl:justify-center xl:left-0 xl:right-0  xl:bottom-0 " >
             <!-- 小滑鼠 -->
-            <div class="absolute bottom-[60px] right-[60px]  ">
+            <div class="mouse_2 absolute bottom-[60px] right-[60px] opacity-0 ">
               <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
-                <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-black rounded-xl">
+                <div class="mouse_scroll absolute h-[14px] w-[3px] left-[11px] top-[-10px] bg-black rounded-xl">
                 </div>
               </div>
-              <p class="text-center mt-1">向下滾動</p>
+              <p class="mouse_scroll text-center mt-1">向下滾動</p>
             </div>
-            <img src="./assets/images/banner_avatar.png" class="w-full h-auto scale-125 md:scale-100 md:translate-y-5  xl:w-1/2" alt="">
+            <!-- banner_avatar -->
+            <img src="./assets/images/banner_avatar.png" class="banner_avatar w-full h-auto scale-125 translate-y-full md:scale-100 md:translate-y-5 xl:translate-y-full xl:w-1/2 " alt="">
           </div>
             <!-- mission stamp -->
-              <img src="./assets/images/misson.png" alt="" class="absolute w-2/3 h-auto -top-12 right-0 md:w-5/12 md:-top-6 xl:w-3/12">
-            <div class="absolute bottom-0  flex justify-center left-0 right-0 text-white font-medium md:px-4 md:bottom-8 xl:w-1/2 xl:left-1/2 xl:-translate-x-[60%] 2xl:-translate-x-1/2 "> 
-              <div class="flex  justify-between md:w-9/12">
+              <img src="./assets/images/misson.png" alt="" class="stamp absolute w-2/3 h-auto -top-12 right-0 opacity-0 md:w-5/12 md:-top-6 xl:w-3/12">
+            <div class=" overflow-hidden absolute bottom-0  flex justify-center left-0 right-0 text-white font-medium md:px-4 md:bottom-8 xl:w-1/2 xl:left-1/2 xl:-translate-x-[60%] 2xl:-translate-x-1/2 "> 
+              <div class="banner_stress  flex  justify-between md:w-9/12 translate-y-full">
                 <p class="text-lg sm:text-xl whitespace-nowrap md:text-3xl ">個人獎<span class="text-2xl sm:text-5xl md:text-[56px] text-Red ">$3,000</span></p>
                 <p class="text-lg sm:text-xl whitespace-nowrap pl-2 md:text-3xl ">團體獎<span class="text-2xl sm:text-5xl md:text-[56px] text-Red ">$10,000</span></p>
               </div>
@@ -100,7 +100,7 @@
       </div>
   </section>
   <!-- hexschool -->
-  <section class="mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
+  <section class="panel mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
     <div class="max-w-screen-2xl mx-auto grid grid-cols-1  sm:grid-cols-2 xl:grid-cols-1 gap-9 md:space-0 xl:px-10">
       <div class="pt-[54px] mb-11 md:mb-0 md:flex md:flex-col md:justify-center xl:mb-[99px]">
         <div class="flex justify-center mb-6">
@@ -124,11 +124,12 @@
                 <img class=" absolute right-[97px] top-[27px]" src="./assets/images/transparentPlate.png" alt="transparentPlate">
                 <div class="absolute bottom-[15px] right-[136px]  ">
                   <div class="h-[44px] w-[30px] rounded-xl border-white border-2 mx-auto relative">
-                    <div class="absolute h-[14px] w-[3px] left-[11px] top-[-7px] bg-white rounded-xl">
+                    <div class="mouse_scroll absolute h-[14px] w-[3px] left-[11px] top-[-10px] bg-white rounded-xl">
                     </div>
                   </div>
-                  <p class="text-center mt-1 text-white">向下滾動</p>
+                  <p class="mouse_scroll text-center mt-1 text-white">向下滾動</p>
                 </div>
+                
             </div>
           </div>
           <div class=" flex flex-col grow px-10 sm:px-8 md:px-10 pt-[34px] sm:pt-8 xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
@@ -182,7 +183,7 @@
     </div>
   </section>
   <!-- 賽程 -->
-  <section >
+  <section class="panel">
     <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">賽程時間</h2>
     <div class="px-4 py-14 max-w-screen-2xl mx-auto xl:py-[92px]">
       <div class="flex overflow-x-scroll xl:flex-col xl:items-center xl:overflow-hidden">
@@ -234,14 +235,13 @@
               <li class="px-10 ml-10 ">12/05(五)</li>
             </ul>
           </li>
-  
         </ul>
       </div>
       <p class="hidden font-sans text-[28px] leading-normal mt-[66px] md:block">初選：將由六角學院前端、UI 評審進行第一波篩選，並於 12/5（五）公布初選佳作名單。<br>決選：由三大企業針對該企業主題進行入圍獎最後篩選，並於 12/23（五）公布企業得獎名單。</p>
     </div>
   </section>
   <!--獎項  -->
-  <section>
+  <section class="panel">
     <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">獎項 </h2>
     <div class="py-10 max-w-screen-2xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 xl:py-[92px] xl:grid-cols-3">
       <div class="flex flex-col">
@@ -276,7 +276,7 @@
       </div>
     </div>
   </section> 
-  <section>
+  <section class="panel">
     <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">各界大神直播分享</h2>
     <div class="px-4 py-11 max-w-screen-2xl mx-auto grid gap-y-5 sm:gap-x-6 sm:gap-y-11 sm:grid-cols-2 sm:pb-[92px] xl:px-[108px] xl:py-[64px] xl:gap-x-5 xl:gap-y-13"> 
       <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/李明.png')] aspect-[522/739]">
