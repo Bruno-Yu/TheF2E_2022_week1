@@ -57,9 +57,9 @@
     <!-- 這是從css處抓的相對路徑不同, 且不要將content放這 -->
     <div class=" bg-cover bg-repeat  bg-[url('../images/bg_desktop.png')]">
     
-<main class="pt-3.5 text-Brown ">
+<main class="pt-3.5 text-Brown scroller   ">
   <!-- banner -->
-  <section class="panel bg-contain sm:bg-cover bg-no-repeat bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] md:aspect-auto  md:bg-[url('../images/NewsPaper.png')] md:pt-7 md:pb-8 md:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
+  <section class="hero-section  bg-contain sm:bg-cover bg-no-repeat bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] md:aspect-auto  md:bg-[url('../images/NewsPaper.png')] md:pt-7 md:pb-8 md:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
     <div class="pt-10 pb-20 px-2 sm:px-5 overflow-hidden bg-cover bg-no-repeat max-w-screen-2xl mx-auto md:pt-24 md:pb-0 md:px-10 md:bg-[url('../images/banner_bg_tablet.png')] md:relative md:overflow-visible xl:bg-[url('../images/banner_bg_desktop.png')] xl:aspect-[100/49] xl:pt-[51px] xl:px-[60px] xl:pb-[85px]">
         <h1 class="text-5xl whitespace-nowrap sm:text-6xl text-[80px] leading-tight font-extrabold text-center md:text-left ">THE F2E <span class="bg-Red rounded-full align-middle text-white text-2xl font-bold px-5 py-1 drop-shadow-md md:rounded-md md:text-3xl md:px-7">4th</span></h1> 
         <div class="xl:flex xl:justify-between">
@@ -100,9 +100,10 @@
       </div>
   </section>
   <!-- hexschool -->
-  <section class="panel mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
+  <section id="hexschool" class="panel hexschool mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
     <div class="max-w-screen-2xl mx-auto grid grid-cols-1  sm:grid-cols-2 xl:grid-cols-1 gap-9 md:space-0 xl:px-10">
-      <div class="pt-[54px] mb-11 md:mb-0 md:flex md:flex-col md:justify-center xl:mb-[99px]">
+      <!-- title -->
+      <div class=" pt-[54px] mb-11 md:mb-0 md:flex md:flex-col md:justify-center xl:mb-[99px]">
         <div class="flex justify-center mb-6">
           <img class="object-cover " src="./assets/images/HexSchool_title.png" alt="">
         </div>
@@ -339,6 +340,7 @@
   </div>
   <script src="./assets/js/vendors.js"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
