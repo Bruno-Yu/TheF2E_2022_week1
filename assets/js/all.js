@@ -100,7 +100,7 @@ entry_hero.to(".news_paper_1", {
 // wand animation 
 var wandAnimation = lottie.loadAnimation({
   container: document.querySelector('#wand-animation'),
-  path: '../assets/json/wand_loading.json',
+  path: '../json/wand_loading.json',
   renderer: 'svg',
   loop: true,
   autoplay: true,
@@ -108,7 +108,7 @@ var wandAnimation = lottie.loadAnimation({
 });
 var wandAnimation_class = lottie.loadAnimation({
   container: document.querySelector('#wand-animation_class'),
-  path: '../assets/json/wand_loading.json',
+  path: '../json/wand_loading.json',
   renderer: 'svg',
   loop: true,
   autoplay: true,
