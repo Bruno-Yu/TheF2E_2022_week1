@@ -40,7 +40,7 @@ entry_hero.to(".news_paper_1", {  yPercent: 15, ease: Power2.easeOut })
 // news_paper_1
 .to(".news_paper_1", { xPercent: 130, yPercent: 50, ease: Circ.easeOut })
 // news_paper_2
-.to(".news_paper_2", { yPercent: -120, ease: Circ.easeOut })
+.to(".news_paper_2", { yPercent: -150, ease: Circ.easeOut })
 // banner_avatar
 .to(".banner_avatar",  {yPercent: -50, ease:Power1.easeOut})
 // news_paper_3
@@ -55,12 +55,13 @@ entry_hero.to(".news_paper_1", {  yPercent: 15, ease: Power2.easeOut })
 
   // .to(window, { onStart: () => {scrollTo:{ '.hexSchool'} }})
 
+  // 特別注意lottie animation的path位置
 // wand animation 
-let wandAnimation = lottie.loadAnimation({
+let wandAnimation =  lottie.loadAnimation({
 
   container: document.querySelector('#wand-animation'),
 
-  path: '../assets/json/wand_loading.json',
+  path: '/TheF2E_2022_week1/assets/json/wand_loading.json',
 
   renderer: 'svg',
 
@@ -71,11 +72,11 @@ let wandAnimation = lottie.loadAnimation({
   name: "wand Animation",
 
 });   
-let wandAnimation_class = lottie.loadAnimation({
+let wandAnimation_class =  lottie.loadAnimation({
 
   container: document.querySelector('#wand-animation_class'),
 
-  path: '../assets/json/wand_loading.json',
+  path: '/TheF2E_2022_week1/assets/json/wand_loading.json',
 
   renderer: 'svg',
 
@@ -94,17 +95,20 @@ $(window).on('load', function () {
 });
 
 $(document).ready(() => { 
-  $('.btn-show').on('click', function () {
+  $('.btn-show').on('click touchstart', function (e) {
+    e.preventDefault();
     $('.wand_layout').fadeOut('slow')
   });
-    $('.menu').on('click', function () {
+  $('.menu').on('click touchstart', function (e) {
+      e.preventDefault();
       $('.menu_dropdown').removeClass('-translate-x-full')
     });
-      $('.close-btn').on('click', function () {
+  $('.close-btn').on('click touchstart', function (e) {
+        e.preventDefault();
       $('.menu_dropdown').addClass('-translate-x-full')
       });
-  $('.btn-login').on('click', function () { 
-    
+  $('.btn-login').on('click touchstart', function (e) { 
+    e.preventDefault();
     window.location.href="https://2022.thef2e.com/login"
   })
 })
