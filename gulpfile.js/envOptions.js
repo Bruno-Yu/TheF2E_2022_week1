@@ -42,6 +42,10 @@ let envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
+      `${nodePath}/aos/dist/aos.js`,
+      // `${nodePath}/gsap/dist/gsap.min.js`,
+      // `${nodePath}/gsap/dist/ScrollTrigger.min.js`,
+      `${nodePath}/lottie-web/build/player/lottie.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,
@@ -49,6 +53,11 @@ let envOptions = {
   img: {
     src: [
       `${srcPath}/assets/images/**/*`,
+    ],
+  },
+    font: {
+    src: [
+      `${srcPath}/assets/json/**/*`,
     ],
   },
   font: {
