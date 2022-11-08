@@ -63,7 +63,7 @@ entry_hero.to(".news_paper_1", {
 })
 // news_paper_2
 .to(".news_paper_2", {
-  yPercent: -120,
+  yPercent: -150,
   ease: Circ.easeOut
 })
 // banner_avatar
@@ -118,16 +118,20 @@ $(window).on('load', function () {
   $('#loading-page').delay(1000).fadeOut('slow');
 });
 $(document).ready(function () {
-  $('.btn-show').on('click touchstart', function () {
+  $('.btn-show').on('click touchstart', function (e) {
+    e.preventDefault();
     $('.wand_layout').fadeOut('slow');
   });
-  $('.menu').on('click touchstart', function () {
+  $('.menu').on('click touchstart', function (e) {
+    e.preventDefault();
     $('.menu_dropdown').removeClass('-translate-x-full');
   });
-  $('.close-btn').on('click touchstart', function () {
+  $('.close-btn').on('click touchstart', function (e) {
+    e.preventDefault();
     $('.menu_dropdown').addClass('-translate-x-full');
   });
-  $('.btn-login').on('click touchstart', function () {
+  $('.btn-login').on('click touchstart', function (e) {
+    e.preventDefault();
     window.location.href = "https://2022.thef2e.com/login";
   });
 });
