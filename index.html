@@ -6,20 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>首頁</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/style/aos.css">
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
-  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+
 </head>
 
 <body >
   <div class="overflow-hidden relative entry-section">
+      <!-- loading animation -->
+    <section class=" w-screen h-screen absolute left-0 top-0 right-0 bottom-0 z-[100] bg-cover bg-repeat  bg-[url('../images/bg_desktop.png')]" id="loading-page">
+      <div class="w-[200px] h-[200px] mx-auto mt-[138px] mb-[25px]" id="wand-animation"></div>
+      <p class="font-ARJULIAN text-[23px] leading-[26px] text-center">努力加載中...</p>
+    </section>
       <!-- news paper -->
   <section>
-    <img class="news_paper_1 absolute z-10 right-[-7%] top-[6%] scale-150" src="./assets/images/news_paper_1.png" alt="news_paper_1">
-    <img class="news_paper_2 absolute z-10 left-[20%]  scale-[1.7]" src="./assets/images/news_paper_2.png" alt="news_paper_2">
+    <img class="news_paper_1 absolute z-10 top-[2%] right-[-7%] md:top-[6%] scale-150" src="./assets/images/news_paper_1.png" alt="news_paper_1">
+    <img class="news_paper_2 absolute z-10  left-[20%] scale-[2] md:scale-[1.7]" src="./assets/images/news_paper_2.png" alt="news_paper_2">
     <img class="news_paper_3 absolute z-10 left-[-6%] top-[5%] scale-150" src="./assets/images/news_paper_3.png" alt="news_paper_3">
                 <!-- 小滑鼠 -->
-    <div class="mouse absolute top-[4%] right-[50%] z-40 ">
+    <div class="mouse absolute top-[4%] right-[50%] translate-x-1/2 z-40 ">
       <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
         <div class="mouse_scroll absolute h-[14px] w-[3px] left-[11px] top-[-10px] bg-black rounded-xl">
         </div>
@@ -27,15 +34,22 @@
       <p class="mouse_scroll text-center mt-1">向下滾動</p>
     </div>
   </section>
-    <header class="px-6 py-2.5 bg-Brown text-white text-xl xl:px-10">
+    <header class="relative px-6 py-2.5 bg-Brown text-white text-xl xl:px-10">
       <div class=" flex justify-between mx-auto max-w-screen-2xl">
       <!-- 漢堡選單 -->
-        <button class=" md:hidden">
+        <button class="menu md:hidden">
           <!-- 比例要調整 -->
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-12 h-10 dark:text-gray-100">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
         </button>
+        <div class="menu_dropdown absolute left-0 right-0 top-0 h-[176px] -translate-x-full z-20 flex justify-center items-center bg-Brown">
+          <button type="button" class="close-btn absolute left-[15px] top-[15px]"><img src="./assets/images/close.png" alt="close"></button>
+          <ul class="list-none text-lg  text-white ">
+            <li class="mb-6"><a class="hover:text-Red" href="https://2022.thef2e.com/news">關卡任務</a></li>
+            <li><a class="hover:text-Red" href="https://2022.thef2e.com/works">作品列表</a></li>
+          </ul>
+        </div>
         <!-- logo -->
         <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class=" hidden md:flex items-center ">
           <img src="./assets/images/hex_logo.png" alt="hex_logo">
@@ -44,20 +58,20 @@
         <div class="items-center flex ">
           <ul class="hidden space-x-9 md:flex mr-4">
             <li class="hidden md:flex ">
-              <a  href="#" class="flex items-center   ">關卡任務</a>
+              <a  href="https://2022.thef2e.com/news" class="flex items-center hover:text-Red ">關卡任務</a>
             </li>
             <li class="hidden md:flex">
-              <a  href="#" class="flex items-center   ">競賽說明</a>
+              <a  href="https://2022.thef2e.com/works" class="flex items-center hover:text-Red ">作品列表</a>
             </li>
           </ul>
-          <button class="self-center px-6 md:px-14 py-1.5 font-medium rounded-full bg-Red ">立即報名</button>
+          <button class="btn-login self-center px-6 md:px-14 py-1.5 font-medium rounded-full bg-Red ">立即報名</button>
         </div>
       </div>
     </header>
     <!-- 這是從css處抓的相對路徑不同, 且不要將content放這 -->
     <div class=" bg-cover bg-repeat  bg-[url('../images/bg_desktop.png')]">
     
-<main class="pt-3.5 text-Brown scroller   ">
+<main class="pt-3.5 text-Brown scroller  ">
   <!-- banner -->
   <section class="hero-section  bg-contain sm:bg-cover bg-no-repeat bg-[url('../images/banner_bg_mobile.png')] aspect-[375/864] md:aspect-auto  md:bg-[url('../images/NewsPaper.png')] md:pt-7 md:pb-8 md:px-4 xl:pt-10 xl:px-10 xl:pb-5 ">
     <div class="pt-10 pb-20 px-2 sm:px-5 overflow-hidden bg-cover bg-no-repeat max-w-screen-2xl mx-auto md:pt-24 md:pb-0 md:px-10 md:bg-[url('../images/banner_bg_tablet.png')] md:relative md:overflow-visible xl:bg-[url('../images/banner_bg_desktop.png')] xl:aspect-[100/49] xl:pt-[51px] xl:px-[60px] xl:pb-[85px]">
@@ -74,7 +88,7 @@
           <!-- 注意 absolute的w-full 不是相對 外層relative的100% 是相對螢幕(所以右邊會被擠出空間)，所以要用left-0 right-0才能確保100% -->
           <div class="md:overflow-hidden xl:absolute xl:flex xl:justify-center xl:left-0 xl:right-0  xl:bottom-0 " >
             <!-- 小滑鼠 -->
-            <div class="mouse_2 absolute bottom-[60px] right-[60px] opacity-0 ">
+            <div class="hidden mouse_2 absolute bottom-[60px] right-[60px] opacity-0 xl:block">
               <div class="h-[44px] w-[30px] rounded-xl border-black border-2 mx-auto relative">
                 <div class="mouse_scroll absolute h-[14px] w-[3px] left-[11px] top-[-10px] bg-black rounded-xl">
                 </div>
@@ -100,10 +114,10 @@
       </div>
   </section>
   <!-- hexschool -->
-  <section id="hexschool" class="panel hexschool mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
+  <section id="hexschool" class="panel hexschool   mb-[85px] px-4 sm:pt-[62px] sm:mb-[103px] xl:mb-[175px]">
     <div class="max-w-screen-2xl mx-auto grid grid-cols-1  sm:grid-cols-2 xl:grid-cols-1 gap-9 md:space-0 xl:px-10">
       <!-- title -->
-      <div class=" pt-[54px] mb-11 md:mb-0 md:flex md:flex-col md:justify-center xl:mb-[99px]">
+      <div class="snap-start pt-[54px] mb-11 md:mb-0 md:flex md:flex-col md:justify-center xl:mb-[99px] ">
         <div class="flex justify-center mb-6">
           <img class="object-cover " src="./assets/images/HexSchool_title.png" alt="">
         </div>
@@ -112,7 +126,7 @@
         <div class="border-Brown border-t-4 border-b-4 py-1 md:hidden xl:block"></div>
       </div>
       <!-- 活動卡片 -->
-      <div class=" flex flex-col bg-contain lg:bg-cover bg-no-repeat   bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[65px] xl:pt-6">
+      <div data-aos="fade-left"     data-aos-easing="ease-in-sine" data-aos-duration="8000"   class="snap-start flex flex-col bg-contain lg:bg-cover bg-no-repeat   bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[65px] xl:pt-6">
         <div class=" xl:flex xl:justify-between xl:px-9">
           <p class="hidden xl:block text-[44px] text-white font-bold font-sans">視差滾動  Parallax Scrolling</p>
           <img  class="block object-cover w-full mb-1 sm:mb-2 lg:mb-7 md:mb-10 xl:w-auto" src="./assets/images/BlockStudio.png" alt="BlockStudio">
@@ -133,7 +147,7 @@
                 
             </div>
           </div>
-          <div class=" flex flex-col grow px-10 sm:px-8 md:px-10 pt-[34px] sm:pt-8 xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
+          <div  class=" flex flex-col grow px-10 sm:px-8 md:px-10 pt-[34px] sm:pt-8 xl:px-0 xl:pt-0 xl:w-[50%] xl:grow-0 xl:pb-[40px]">
             <h3 class="text-4xl lg:text-[44px]  leading-normal font-black font-serif mb-3">The F2E 活動網站設計</h3>
             <p class="font-sans text-xl lg:text-2xl  leading-normal font-medium grow">請參考本屆官網的首頁視差滾動技巧，並請您重新 redesign 本頁面來設計。</p>
             <div class="flex justify-between mt-auto  xl:justify-start">
@@ -143,7 +157,7 @@
           </div>
         </div>  
       </div>
-      <div class=" flex flex-col bg-contain bg-no-repeat bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[80px] xl:pt-6">
+      <div data-aos="fade-right" data-aos-duration="8000"  class="snap-start flex flex-col bg-contain bg-no-repeat bg-[url('../images/task_md.png')] aspect-[343/552] p-4 pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[80px] xl:pt-6">
         <div class=" flex xl:justify-between xl:px-9">
           <p class="hidden xl:block text-[44px] text-white font-bold">線上簽署  Canvas</p>
           <img  class="ml-auto block object-cover w-1/2 mb-1 sm:mb-7 md:mb-10 xl:w-auto xl:ml-0" src="./assets/images/KDAN.png" alt="KDAN">
@@ -162,7 +176,7 @@
           </div>
         </div>  
       </div>
-      <div class=" flex flex-col bg-contain lg:bg-cover bg-no-repeat bg-[url('../images/task_md.png')] aspect-[343/552] pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[65px] xl:pt-6">
+      <div data-aos="fade-left" data-aos-duration="1000"  class="snap-start flex flex-col bg-contain lg:bg-cover bg-no-repeat bg-[url('../images/task_md.png')] aspect-[343/552] pb-[50px] sm:pb-[100px] xl:bg-[url('../images/task_bg_desktop.png')] xl:aspect-[1200/528] xl:pb-[65px] xl:pt-6">
         <div class=" xl:flex xl:justify-between xl:px-9">
           <p class="hidden xl:block text-[44px] text-white font-bold font-sans">Scrum  JS draggable</p>
           <img  class="block object-cover w-full mb-1 sm:mb-7 md:mb-10 xl:w-auto" src="./assets/images/TITANSOFT.png" alt="TITANSOFT">
@@ -245,7 +259,7 @@
   <section class="panel">
     <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">獎項 </h2>
     <div class="py-10 max-w-screen-2xl mx-auto grid grid-cols-1 gap-6 md:grid-cols-2 xl:py-[92px] xl:grid-cols-3">
-      <div class="flex flex-col">
+      <div data-aos="fade-down" data-aos-delay="2000" class="flex flex-col">
         <img src="./assets/images/medal_copper.png" alt="medal_copper">
         <div class="flex flex-col items-center relative -translate-y-[60px]" >
           <div class="bg-Red px-5 py-2 rounded-lg leading-normal text-white font-medium font-sans text-2xl mx-auto mb-8 drop-shadow-xl">
@@ -254,7 +268,7 @@
           <p class="text-center text-2xl leading-normal font-sans">每個關卡各 1 組</p>
         </div>
       </div> 
-      <div class="flex flex-col">
+      <div data-aos="fade-down"  data-aos-delay="1500" class="flex flex-col">
         <img src="./assets/images/medal_gold.png" alt="medal_gold">
         <div class="flex flex-col items-center relative -translate-y-[60px]" >
           <div class="bg-Red px-5 py-2 rounded-lg leading-normal text-white font-medium font-sans text-2xl mx-auto mb-8 drop-shadow-xl">
@@ -263,8 +277,8 @@
           <p class="text-center text-2xl leading-normal font-sans">每個關卡各 2 名，<br>設計 1 名、前端 1 名</p>
       </div>
       </div>
-      <div class="flex flex-col">
-        <img src="./assets/images/medal_silver.png" alt="medal_silver">
+      <div data-aos="fade-down"    class="flex flex-col">
+        <img  src="./assets/images/medal_silver.png" alt="medal_silver">
         <div class="flex flex-col items-center relative -translate-y-[60px]" >
           <div class="bg-Red px-5 py-2 rounded-lg leading-normal text-white font-medium font-sans text-2xl mx-auto mb-8 drop-shadow-xl">
             數位獎狀(60名)
@@ -277,46 +291,54 @@
       </div>
     </div>
   </section> 
-  <section class="panel">
-    <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">各界大神直播分享</h2>
-    <div class="px-4 py-11 max-w-screen-2xl mx-auto grid gap-y-5 sm:gap-x-6 sm:gap-y-11 sm:grid-cols-2 sm:pb-[92px] xl:px-[108px] xl:py-[64px] xl:gap-x-5 xl:gap-y-13"> 
-      <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/李明.png')] aspect-[522/739]">
-        <h3 class="text-4xl font-bold py-3 text-center mt-5 xl:mt-10 xl:text-6xl">網站的動態趨勢</h3>
-        <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
-          <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
-            <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">李明<br>版塊設計創辦人兼總監</p>
+
+  <section class="panel relative">
+    <div class="wand_layout absolute z-10 left-0 top-0 right-0 bottom-0 bg-cover bg-repeat  bg-[url('../images/bg_desktop.png')]">
+      <h2 class="text-7xl mt-10 text-center font-black mb-12">意想不到的好康</h2>
+        <a class="btn-show block text-7xl text-center hover:text-Red font-black">請點擊</a>
+        <div class="w-[200px] h-[200px] mt-5 z-10 mx-auto translate-x-full -translate-y-1/2" id="wand-animation_class"></div>
+      </div>
+      <h2 class="font-bold text-[40px] leading-normal text-white py-7 bg-Brown text-center xl:py-[42px]">各界大神直播分享</h2>
+      <div class="px-4 py-11 max-w-screen-2xl mx-auto grid gap-y-5 sm:gap-x-6 sm:gap-y-11 sm:grid-cols-2 sm:pb-[92px] xl:px-[108px] xl:py-[64px] xl:gap-x-5 xl:gap-y-13"> 
+        <a href="https://youtu.be/9gzDFKTIFB4">
+          <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/李明.gif')] aspect-[522/739]">
+            <h3 class="text-4xl font-bold py-3 text-center mt-5 xl:mt-10 xl:text-6xl">網站的動態趨勢</h3>
+            <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
+              <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
+                <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">李明<br>版塊設計創辦人兼總監</p>
+              </div>
+              <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/13(四)20:00 ~ 21:30</p>
+            </div>
           </div>
-          <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/13(四)20:00 ~ 21:30</p>
+        </a>
+        <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/Leo.gif')] aspect-[522/739]">
+          <h3 class="text-4xl font-bold py-3 text-center mt-2 xl:mt-5 xl:text-6xl">jQuery 也可以做到<br>的互動效果</h3>
+          <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
+            <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
+              <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">Leo<br>Angular Taiwan 傳教士</p>
+            </div>
+            <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/10(四)20:00 ~ 21:30</p>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/繼緯.gif')] aspect-[522/739]">
+          <h3 class="text-4xl font-bold py-3 text-center mt-2 xl:mt-5 xl:text-6xl">網頁可以拖拖拉拉<br>draggable.js 介紹</h3>
+          <div class="absolute bottom-0 flex flex-col items-center left-0 right-0 lg:bottom-11 xl:bottom-16">
+            <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
+              <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl  ">邱繼緯<br>前端工程師</p>
+            </div>
+            <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/17(四)20:00 ~ 21:30</p>
+          </div>
+        </div>
+        <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/哲宇.gif')] aspect-[522/739]">
+          <h3 class="text-4xl font-bold py-3 text-center mt-2  xl:mt-5 xl:text-6xl">互動式網頁設計工程<br>師該具備哪些技能？</h3>
+          <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
+            <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
+              <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">吳哲宇<br>墨雨互動設計創辦人</p>
+            </div>
+            <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/24(四)20:00 ~ 21:30</p>
+          </div>
         </div>
       </div>
-      <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/Leo.png')] aspect-[522/739]">
-        <h3 class="text-4xl font-bold py-3 text-center mt-2 xl:mt-5 xl:text-6xl">jQuery 也可以做到<br>的互動效果</h3>
-        <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
-          <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
-            <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">Leo<br>Angular Taiwan 傳教士</p>
-          </div>
-          <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/10(四)20:00 ~ 21:30</p>
-        </div>
-      </div>
-      <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/繼緯.png')] aspect-[522/739]">
-        <h3 class="text-4xl font-bold py-3 text-center mt-2 xl:mt-5 xl:text-6xl">網頁可以拖拖拉拉<br>draggable.js 介紹</h3>
-        <div class="absolute bottom-0 flex flex-col items-center left-0 right-0 lg:bottom-11 xl:bottom-16">
-          <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
-            <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl  ">邱繼緯<br>前端工程師</p>
-          </div>
-          <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/17(四)20:00 ~ 21:30</p>
-        </div>
-      </div>
-      <div class="relative flex flex-col bg-contain bg-no-repeat  bg-[url('../images/哲宇.png')] aspect-[522/739]">
-        <h3 class="text-4xl font-bold py-3 text-center mt-2  xl:mt-5 xl:text-6xl">互動式網頁設計工程<br>師該具備哪些技能？</h3>
-        <div class="absolute bottom-0 flex flex-col items-center mx-auto left-0 right-0 lg:bottom-11 xl:bottom-16">
-          <div class=" py-1 mb-1   bg-contain bg-no-repeat bg-[url('../images/class_tab.png')] h-[44px] aspect-[259/66] text-center mx-auto xl:h-[66px]">
-            <p class="text-xs text-white font-sans font-semibold text-center xl:text-xl ">吳哲宇<br>墨雨互動設計創辦人</p>
-          </div>
-          <p class="text-2xl leading-loose font-Roboto font-bold text-center mb-1 xl:text-4xl">11/24(四)20:00 ~ 21:30</p>
-        </div>
-      </div>
-    </div>
   </section> 
 </main>
     
@@ -342,6 +364,7 @@
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+  <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
   <script src="./assets/js/all.js"></script>
 </body>
 

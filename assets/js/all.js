@@ -1,8 +1,12 @@
 "use strict";
 
-console.log('Hello!');
-$(document).ready(function () {
-  console.log('Hello! Bruno');
+AOS.init({
+  initClassName: "axios-init",
+  delay: 1000,
+  // values from 0 to 3000, with step 50ms
+  duration: 1000,
+  // values from 0 to 3000, with step 50ms
+  useClassNames: true
 });
 
 // mouse scroll down animation
@@ -90,55 +94,41 @@ entry_hero.to(".news_paper_1", {
   opacity: 1,
   duration: 0.5
 }, ">-1");
-// .to(window, { duration: 2, scrollTo:{y:2000} })
-// entry_hero.to(".entry-section", { pin: false });
-// entry_hero.to(".hexschool", { yPercent: -30 , duration: 0.5 });
-// stamp
-// entry_hero.to(".news_paper_3", { xPercent: -120, yPercent: 50, duration: 2, ease: Circ.easeOut });
-// entry_hero.to(panels,">1")
-// entry_hero.to(".hexschool", {   yPercent:-100, 	start: "top top", pin:false})
-// entry_hero.utils.toArray(".panel").forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: "top top", 
-//     pin: true, 
-//     pinSpacing: false,
-//     snap: 1 / 4 
-//   });
-// })
-// gsap.registerPlugin(ScrollTrigger);
-// let panels = gsap.utils.toArray(".panel").forEach((panel, i) => {
-//   ScrollTrigger.create({
-//     trigger: panel,
-//     start: "top 10%", 
-//     // pin: true, 
-//     end: "center 30%",
-//     markers: {
-//       startColor: "purple",
-//       endColor: "fuchsia",
-//       fontSize: "4rem",
-//       index: 200
-//     },
-//     pinSpacing: false,
-//   })
-// });
 
-// gsap.to(".panel", {yPercent: 20})
-// ScrollTrigger.create({
-//   snap: {
-//     snapTo: ".panel",
-//   }
-//   })
+// .to(window, { onStart: () => {scrollTo:{ '.hexSchool'} }})
 
-// let entry_hex = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: ".hexschool",
-//     start: "top", 
-//     end: () => `${document.querySelector('.hexschool').offsetHeight}`,
-//     scrub: true, 
-//     markers: true,
-//   }
-// })
-
-// entry_hex.to('.hexschool', { y: 500, ease: none })
+// wand animation 
+var wandAnimation = lottie.loadAnimation({
+  container: document.querySelector('#wand-animation'),
+  path: '../assets/json/wand_loading.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  name: "wand Animation"
+});
+var wandAnimation_class = lottie.loadAnimation({
+  container: document.querySelector('#wand-animation_class'),
+  path: '../assets/json/wand_loading.json',
+  renderer: 'svg',
+  loop: true,
+  autoplay: true,
+  name: "wand Animation_class"
+});
+$(window).on('load', function () {
+  $('#loading-page').delay(1000).fadeOut('slow');
+});
+$(document).ready(function () {
+  $('.btn-show').on('click', function () {
+    $('.wand_layout').fadeOut('slow');
+  });
+  $('.menu').on('click', function () {
+    $('.menu_dropdown').removeClass('-translate-x-full');
+  });
+  $('.close-btn').on('click', function () {
+    $('.menu_dropdown').addClass('-translate-x-full');
+  });
+  $('.btn-login').on('click', function () {
+    window.location.href = "https://2022.thef2e.com/login";
+  });
+});
 //# sourceMappingURL=all.js.map
