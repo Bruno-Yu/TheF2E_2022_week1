@@ -98,7 +98,7 @@ entry_hero.to(".news_paper_1", {
 // .to(window, { onStart: () => {scrollTo:{ '.hexSchool'} }})
 
 // wand animation 
-var wandAnimation = bodymovin.loadAnimation({
+var wandAnimation = lottie.loadAnimation({
   container: document.querySelector('#wand-animation'),
   path: '../assets/json/wand_loading.json',
   renderer: 'svg',
@@ -106,7 +106,7 @@ var wandAnimation = bodymovin.loadAnimation({
   autoplay: true,
   name: "wand Animation"
 });
-var wandAnimation_class = bodymovin.loadAnimation({
+var wandAnimation_class = lottie.loadAnimation({
   container: document.querySelector('#wand-animation_class'),
   path: '../assets/json/wand_loading.json',
   renderer: 'svg',
