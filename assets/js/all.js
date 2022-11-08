@@ -98,7 +98,7 @@ entry_hero.to(".news_paper_1", {
 // .to(window, { onStart: () => {scrollTo:{ '.hexSchool'} }})
 
 // wand animation 
-var wandAnimation = lottie.loadAnimation({
+var wandAnimation = bodymovin.loadAnimation({
   container: document.querySelector('#wand-animation'),
   path: '../assets/json/wand_loading.json',
   renderer: 'svg',
@@ -106,7 +106,7 @@ var wandAnimation = lottie.loadAnimation({
   autoplay: true,
   name: "wand Animation"
 });
-var wandAnimation_class = lottie.loadAnimation({
+var wandAnimation_class = bodymovin.loadAnimation({
   container: document.querySelector('#wand-animation_class'),
   path: '../assets/json/wand_loading.json',
   renderer: 'svg',
@@ -118,16 +118,16 @@ $(window).on('load', function () {
   $('#loading-page').delay(1000).fadeOut('slow');
 });
 $(document).ready(function () {
-  $('.btn-show').on('click', function () {
+  $('.btn-show').on('click touchstart', function () {
     $('.wand_layout').fadeOut('slow');
   });
-  $('.menu').on('click', function () {
+  $('.menu').on('click touchstart', function () {
     $('.menu_dropdown').removeClass('-translate-x-full');
   });
-  $('.close-btn').on('click', function () {
+  $('.close-btn').on('click touchstart', function () {
     $('.menu_dropdown').addClass('-translate-x-full');
   });
-  $('.btn-login').on('click', function () {
+  $('.btn-login').on('click touchstart', function () {
     window.location.href = "https://2022.thef2e.com/login";
   });
 });
