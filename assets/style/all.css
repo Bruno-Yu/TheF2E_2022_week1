@@ -1006,11 +1006,11 @@ body{
 .top-0{
   top: 0px;
 }
+.top-\[2\%\]{
+  top: 2%;
+}
 .right-\[-7\%\]{
   right: -7%;
-}
-.top-\[6\%\]{
-  top: 6%;
 }
 .left-\[20\%\]{
   left: 20%;
@@ -1027,56 +1027,11 @@ body{
 .right-\[50\%\]{
   right: 50%;
 }
-.left-1\/2{
-  left: 50%;
-}
-.left-full{
-  left: 100%;
-}
-.left-\[10px\]{
-  left: 10px;
-}
-.top-\[10px\]{
-  top: 10px;
-}
-.left-\[20px\]{
-  left: 20px;
-}
-.top-\[20px\]{
-  top: 20px;
-}
-.left-\[30px\]{
-  left: 30px;
-}
-.top-\[30px\]{
-  top: 30px;
-}
 .left-\[15px\]{
   left: 15px;
 }
 .top-\[15px\]{
   top: 15px;
-}
-.top-\[20\%\]{
-  top: 20%;
-}
-.top-\[-20\%\]{
-  top: -20%;
-}
-.top-\[0\%\]{
-  top: 0%;
-}
-.top-\[2\%\]{
-  top: 2%;
-}
-.top-\[-5\%\]{
-  top: -5%;
-}
-.top-\[10\%\]{
-  top: 10%;
-}
-.top-\[3\%\]{
-  top: 3%;
 }
 .z-10{
   z-index: 10;
@@ -1141,6 +1096,12 @@ body{
 .mb-8{
   margin-bottom: 2rem;
 }
+.mt-10{
+  margin-top: 2.5rem;
+}
+.mb-12{
+  margin-bottom: 3rem;
+}
 .mt-5{
   margin-top: 1.25rem;
 }
@@ -1155,18 +1116,6 @@ body{
 }
 .mr-4{
   margin-right: 1rem;
-}
-.mt-10{
-  margin-top: 2.5rem;
-}
-.mb-5{
-  margin-bottom: 1.25rem;
-}
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-.mb-12{
-  margin-bottom: 3rem;
 }
 .block{
   display: block;
@@ -1212,29 +1161,14 @@ body{
 .h-\[48\.5px\]{
   height: 48.5px;
 }
-.h-screen{
-  height: 100vh;
-}
 .h-\[200px\]{
   height: 200px;
 }
+.h-screen{
+  height: 100vh;
+}
 .h-10{
   height: 2.5rem;
-}
-.h-\[50px\]{
-  height: 50px;
-}
-.h-\[100px\]{
-  height: 100px;
-}
-.h-\[1000px\]{
-  height: 1000px;
-}
-.h-\[300px\]{
-  height: 300px;
-}
-.h-\[375px\]{
-  height: 375px;
 }
 .h-\[176px\]{
   height: 176px;
@@ -1263,11 +1197,11 @@ body{
 .w-\[48\.5px\]{
   width: 48.5px;
 }
-.w-screen{
-  width: 100vw;
-}
 .w-\[200px\]{
   width: 200px;
+}
+.w-screen{
+  width: 100vw;
 }
 .w-12{
   width: 3rem;
@@ -1298,18 +1232,6 @@ body{
       -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.translate-x-1\/2{
-  --tw-translate-x: 50%;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.translate-x-2\/3{
-  --tw-translate-x: 66.666667%;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .translate-x-full{
   --tw-translate-x: 100%;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1318,6 +1240,12 @@ body{
 }
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
+  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.translate-x-1\/2{
+  --tw-translate-x: 50%;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1344,13 +1272,6 @@ body{
 .scale-150{
   --tw-scale-x: 1.5;
   --tw-scale-y: 1.5;
-  -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-      -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-          transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-.scale-\[1\.7\]{
-  --tw-scale-x: 1.7;
-  --tw-scale-y: 1.7;
   -webkit-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
       -ms-transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
           transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1492,26 +1413,14 @@ body{
 .bg-\[url\(\'\.\.\/images\/task_md\.png\'\)\]{
   background-image: url('../images/task_md.png');
 }
-.bg-\[url\(\'\.\.\/images\/\674E\660E\.png\'\)\]{
-  background-image: url('../images/李明.png');
-}
-.bg-\[url\(\'\.\.\/images\/class_tab\.png\'\)\]{
-  background-image: url('../images/class_tab.png');
-}
-.bg-\[url\(\'\.\.\/images\/Leo\.png\'\)\]{
-  background-image: url('../images/Leo.png');
-}
-.bg-\[url\(\'\.\.\/images\/\7E7C\7DEF\.png\'\)\]{
-  background-image: url('../images/繼緯.png');
-}
-.bg-\[url\(\'\.\.\/images\/\54F2\5B87\.png\'\)\]{
-  background-image: url('../images/哲宇.png');
-}
 .bg-\[url\(\'\.\.\/images\/bg_desktop\.png\'\)\]{
   background-image: url('../images/bg_desktop.png');
 }
 .bg-\[url\(\'\.\.\/images\/\674E\660E\.gif\'\)\]{
   background-image: url('../images/李明.gif');
+}
+.bg-\[url\(\'\.\.\/images\/class_tab\.png\'\)\]{
+  background-image: url('../images/class_tab.png');
 }
 .bg-\[url\(\'\.\.\/images\/Leo\.gif\'\)\]{
   background-image: url('../images/Leo.gif');
@@ -1521,6 +1430,9 @@ body{
 }
 .bg-\[url\(\'\.\.\/images\/\54F2\5B87\.gif\'\)\]{
   background-image: url('../images/哲宇.gif');
+}
+.bg-\[url\(\'\.\.\/images\/leo\.gif\'\)\]{
+  background-image: url('../images/leo.gif');
 }
 .bg-contain{
   background-size: contain;
@@ -1692,16 +1604,16 @@ body{
 .text-\[28px\]{
   font-size: 28px;
 }
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
 }
 .text-\[23px\]{
   font-size: 23px;
-}
-.text-7xl{
-  font-size: 4.5rem;
-  line-height: 1;
 }
 .font-extrabold{
   font-weight: 800;
@@ -2012,12 +1924,6 @@ body{
 
   .md\:top-\[6\%\]{
     top: 6%;
-  }
-
-
-
-  .md\:top-\[0\%\]{
-    top: 0%;
   }
 
 
