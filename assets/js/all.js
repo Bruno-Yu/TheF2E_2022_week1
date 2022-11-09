@@ -97,6 +97,7 @@ entry_hero.to(".news_paper_1", {
 
 // .to(window, { onStart: () => {scrollTo:{ '.hexSchool'} }})
 
+// 特別注意lottie animation的path位置
 // wand animation 
 var wandAnimation = lottie.loadAnimation({
   container: document.querySelector('#wand-animation'),
